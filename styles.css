@@ -24,7 +24,10 @@ body {
     border-radius: 25px;
     background-color: hsl(0, 0%, 100%);
     margin: 5% auto;
-    overflow: hidden;    
+    overflow: hidden; 
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.39);
+}  
+     
 }
 
 .container {
@@ -85,7 +88,7 @@ body {
 }
 
 .breakdown a:hover {
-    color: hsl(295, 91%, 34%);
+    color: hsl(256, 58%, 50%);
     transition-duration: 0.75s;
 }
 
@@ -113,7 +116,7 @@ img+span {
 }
 
 #proceed:hover {
-    background-color: hsl(261, 73%, 61%);
+    background-color: hsl(224, 23%, 55%);
     transition-duration: 0.75s;
 }
 
@@ -135,14 +138,18 @@ img+span {
         width: 90%;
         height: 90%;
     }
+    body {
+        background: url(images\pattern-background-mobile.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: hsl(225, 100%, 94%);
+       
+    }
+    #proceed:active {
+        background-color: hsl(256, 58%, 50%);
+        transition-duration: 0.75s;
+    }
     
-    .notification p {
-        width: auto;
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.5rem;        
-        padding-bottom: 0.5rem;
-    
+
 }
